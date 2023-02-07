@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    <h1>nested loop</h1>
+    <h2>when we use multiple loop inside the loop then
+         it is known as nested loop</h2>
+      <h3>it may be used for many purposes but it mainly used for data that to
+         be shown in  tabular and matrix form</h3>
+   <h3> where outer loop used for row and inner for column</h3>
+   <script>
+     for(var a =1; a<=100; a=a+10){
+      for(var b=a; b < a+10; b++){
+        document.write(b + " ");
+          }
+      document.write("<br>");
+    }
+
+    document.write("another example of this nested loop");
+  for (var c=1;c<=5;c++){
+    for(var d =1 ;d<=c; d++){
+        document.write(d + " ");
+    }
+  document.write("<br>")
+  }
+
+  document.write("here is also an another example <br>");
+
+    for( var e=1; e<=5;e++){
+       for(var f =1; f<=e;f++){
+        document.write(e + " ");
+       }
+       document.write("<br>");
+    }
+   </script>
+       
+</body>
+</html>

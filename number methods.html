@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Number methods</h1>
+    <ol>
+        <li>Number():--- convert to number</li>
+        <li>parseInt():--- change decimal to integer</li>
+        <li>parseFloat():-- it reurn in . also</li>
+        <li>isFinite() : --- it returns true or false after checking number is finite or not.</li>
+        <li>isInteger() :  --- it checks number integer or not?</li>
+        <li>toFixed():-- if 5 number after decimal then if i will give 2 then it will take 2 values  after the decimal</li>
+        <li>toPrecision ():--  it retrun roundoff value of after decimal</li>
+        
+    </ol>
+
+    <script>
+        var a =10.6564;
+
+        var b = parseFloat(a);
+        var c = parseInt(a)
+        document.write(b + "<br>") ;
+        document.write(c);
+         var d = 1000;
+         var e = Number.isFinite(d);
+         document.write(e);
+         var f = a.toFixed(2);
+         document.write("<br>" + f);
+         var g = a.toPrecision(2);
+         document.write( "<br>" + g );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+    <h3>it is an advance version of an array.
+         curli braces is for object and square bracket is for array</h3>
+        <h3> we cam also add object inside an object</h3>
+         <h3>we cannopt print directly like nan array so we have to call like . objectname.their properties to be printed</h3>
+    <script>
+        var a ={
+            firstName: 'Md Atiqur',
+            lastName: 'Rahman',
+            age :18,
+            country : 'India',
+            favSports :['cricket','volleyball','chodampatti'],
+       
+        }
+         document.write(a.age);
+         console.log(a);
+         document.write("<h2> new method of making object where we make an object and give them value whnen we want to givce anywhere </h2>");
+         document.write("<h2>  var a = new Object(); <br> a. firstName :</h2>")
+         
+          var nObj =new Object();
+          nObj.firstname= 'rahman';  
+          nObj.lastname= 'atiqur';  
+          document.write(nObj.firstname);
+    
+    
+    </script>
+      <h1 style="margin-left: 31%;">Array of object</h1>
+      <script>
+        var arrayofOBject=[
+            {
+                name: 'Md Atiqur Rahman', age:23
+            },
+            {
+                name: 'Md Shafiqur Rahman', age:19
+            },
+            {
+                name : 'zulekha', age: 22
+            }
+
+            
+        ]
+         console.log(arrayofOBject);
+         for( var test =0 ; test<arrayofOBject.length; test++){
+        document.write(arrayofOBject[test].name +  " " + arrayofOBject[test].age + "<br>");
+
+                  }
+      </script>
+
+</body>
+</html>

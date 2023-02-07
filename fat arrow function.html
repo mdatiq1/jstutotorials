@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin-left: 40%";> fat arrow => function</h1>
+
+    <script>
+        // in es5
+     const sum =  function(){
+       let  a=20;
+       let b=  30;
+       return a+b;
+     }
+     document.write(`sum is ${sum()}`);
+
+     // lets see fat arrow function
+       let c =5;
+    
+     const sum1=(d) =>c+d;
+     document.write("<br>");
+     document.write(`sum  is ${sum1(30)}`);
+
+     // lets see another way ;
+      const sub =() =>{
+        e =40;
+        f = 80;
+        return e-f;
+      }
+      document.write("<br>");
+      document.write(`subtraction  is ${sub()} `);
+
+       // lets see after passing parameter
+        let g = 20;
+        var multiply = (h) =>g*h;
+        document.write("<br>");
+        document.write(multiply(10));
+     
+    </script>
+</body>
+</html>

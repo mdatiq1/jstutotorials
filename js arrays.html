@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>----Arrays??-----</h1>
+    <h3>arrays is used to store multiple values. of many data types  
+         var a =[10,20,30,40];
+    </h3>
+
+
+    <script>
+
+        document.write("<ul>");
+        var ary=[10,20,15,45,55,60];
+        sum= 0;
+        for(a=0;a<6;a++){
+
+        
+        document.write( "<li>" + ary[a] +  "</li>");
+        sum=sum+ary[a];
+        }
+        document.write("</ul>");
+       
+        document.write("Total sum" +  " "+sum)
+    </script>
+
+
+<h2>---- new mehtod of creating array----</h2>
+<h3>in this mehtod we will see the create of an array where we dont
+     know values.----- 
+      <br>syntax ---- var a =new Array();
+     <br> a[0]=10; a[1]=atiq  ---- result::  10,atiq</h3>
+  
+
+<script>
+    var a =new Array();
+    for(var g=0;g<3;g++){
+
+        //a[g]= prompt("enter the value");
+
+    }
+     document.write("<ul>");
+        for( var b=0;b<3;b++){
+            document.write( "<li>"+ a[b] +  "</li>");
+        }
+        document.write("<ul>");
+
+    
+
+</script>
+
+<h1> multidimentional array</h1>
+<h3>muultiple arrays inside an array</h3>
+  <script>
+    var cl=[
+        ["Harry",18,"male","Btech"],
+        ["Atiq",23,"male","Mtech"],
+        ["Shafiq",19,"male","I com"],
+        ["zulekha",21,"female","BA"],
+        ["Khushboo",21,"female","BA"]
+    ];
+
+    
+    document.write("<table border='5px solid' cellspacing='0'>");
+    for (var a=0;a<cl.length;a++){// cl.length is used to take lenght of array .it is a method of array
+
+        document.write("<tr>");
+        for( var b=0;b<cl[a].length;b++){ // this loop is for remove the commas
+
+        
+    
+    document.write( "<td>" + cl[a][b]+ "</td>");
+}
+  document.write("<br>");
+  document.write("</tr>");
+    }
+    document.write("</table>");
+  </script>
+
+ <h1>Modify and delete arrays</h1>
+  <h3>syntax--- <br> array name[index]= value to changed</h3>
+   <h3> to delete we predefined function delete array name[index]</h3>
+  <script>
+    var atiq =["atiq",23,"shakarpur","single"];
+    document.write(atiq + "<br>");
+    atiq[1]=22;
+    document.write(atiq + "<br>");
+    atiq [3]="committed";
+    document.write(atiq +"<br>");
+    delete atiq[3];
+    document.write(atiq);
+   </script>
+      <h1>METHODS---/ functions</h1>
+      <OL>
+        <LI>SORT()</LI>
+        <LI>REVERSE()</LI>
+        <LI>POP()</LI>
+        <LI>PUSH()</LI>
+        <LI>SHIFT()</LI>
+        <LI>UNSHIFT()</LI>
+        <LI>CONCAT()</LI>
+        <LI>JOIN()</LI>
+        <LI>SLICE()</LI>
+        <LI>SPLICE()</LI>
+        <LI>isArray()</LI>
+        <LI>indexOf()</LI>
+        <LI>lastindexOf()</LI>
+        <LI>entries()</LI>
+        <LI>every()</LI>
+        <LI>filter()</LI>
+        <LI>find()</LI>
+        <LI>findindex()</LI>
+        <LI>includes()</LI>
+        <LI>some()</LI>
+        <LI>forEach()</LI>
+        <LI>toString()</LI>
+        <li>valueOf()</li>
+        <li>fill()</li>
+      </OL>
+   <h1>Sort and reverse</h1>
+   <script>
+    var order =["shafiq","atiq","zulekha","khushboo"];
+    document.write(order);
+    order.sort();
+    document.write("<br>");
+    document.write(order);
+    order.reverse();
+    document.write("<br>");
+    document.write(order);
+    document.write("<h1>pop and push</h1>");
+    order.pop();
+    document.write("<br>" + order);
+    order.push("atiq","akhlaque");
+    document.write("<br> "+ order);
+    document.write("<h1> concat and join</h1>");
+    
+    var order1 =["rahman","raheem","sattar"];
+    var c = order.concat(order1);
+    document.write(c);
+
+      document.write("<h2> actually  join()  makes arrays different values to one after joining and makes values 1 </h2>");
+     var d =c.join(" ");
+     document.write("<br>");
+     document.write(d);
+    
+     document.write("<h1>slice & spslice </h2>");
+        document.write("<h3>slice --- <br> its just like an a piece where we make slice here also we make slice of an array and print where we have to give the start and end results</h3>"); 
+        document.write("<h3>splice()--- <br> in this we want to add values anywhere in an array. it also delete existing value we pass three values  -- splice (index,delete count, howmany,new value) .for start and end we use push() and unshit()</h3>");
+        document.write(c);
+      var e =order1.slice(1,2);
+      document.write("<br>");
+      document.write(e);
+      order.splice(1,2,"zulekha baby","natasha baby", "sehrun");
+      document.write("<br>");
+      document.write(order);
+    
+    
+    </script>
+
+    <h1>array map functions</h1>
+    <h3>it works like for and foreach loop but with little changes </h3>
+    <h3> it doesn't change existing array but we can make new array from existing array  </h3>
+    <script>
+      var mapf = [10,20,30,15,19];
+      document.write(mapf + "<br>");
+
+       var mapf1 = mapf.map(test1);
+       document.write(mapf1);
+
+       function test1 (x){
+        return x*5;
+
+       }
+    </script>
+</body>
+</html>

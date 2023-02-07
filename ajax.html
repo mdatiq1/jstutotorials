@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ajax </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+       <style>
+        h1{
+            margin-left: 40%;
+        }
+       </style>
+
+    </head>
+
+<body>
+    <h1 >Ajax in one video</h1>
+    <button type="button" id="fetchBtn" class="btn btn-primary">fetch-data</button>
+<button type="button"    id="backupBtn" class="btn btn-success">backup-btn</button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+
+        </script>
+    <script>
+        console.log("ajax in one video");
+        let fetchBtn= document.getElementById('fetchBtn');
+        fetchBtn.addEventListener('click',clickEventListener)
+
+       function clickEventListener(){
+        console.log("you just clicked fetch buutton");
+       
+
+        //instantiate an xhr object
+        const xhr = new XMLHttpRequest();
+
+        //openb the object
+        xhr.open('GET','atiq.txt',true);
+         
+         // what to do on progress (optional)
+         const onProgress = function(){
+            console.log('on progress');
+         }
+        
+          // what to do onload
+
+          xhr.onload= function(){
+            if(this.status === 200)
+            {
+                console.log(this.responseText);
+             } else{
+                console.log(" some error occurs")
+             }
+           
+          }
+           // send the request
+           xhr.send();
+
+        }
+    </script>
+</body>
+
+</html>

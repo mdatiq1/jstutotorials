@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <h1>loops---</h1>
+    <h3>loops is divided in three parts </h3>
+    
+     <h3>initialization--- <br> condoition  <br></h3>
+
+       <h1>---DO WHILE LOOP---</h1>
+       <h3> in this loop, condition is checked
+         in second time becasue it enter loops first time directly</h3>
+        <script>
+            var a =1;
+            do{
+                document.write("hello guys  <br>");
+                a=a+1;
+            }
+            while(a<=10)
+        </script>
+        <h1 style="margin-left: 31%";> For in Loop </h1>
+        <h3> mostly used to print objects</h3>
+        <h3> it is very important loop . because we cannot print object overall directly so we use for in loop</h3>
+        <script>
+            var obj ={
+                name : 'Md Atqiur Rahman',
+                lover : 'zulekha',
+                age : 23,
+                email : 'atiqur.mdrahaman@gmail.com'
+            };
+              for(var key in obj){ //  here key  can be any name  and obj is object name
+                document.write( key + ": "+ obj[key] +  "<br>")
+
+              }
+        </script>
+
+
+        </body>
+</html>

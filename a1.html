@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <STYLe>
+    * {
+ margin: 0; padding: 0;        
+    
+    }
+     body{
+         font-family:sans-serif;
+     }
+    .container{
+        width: 500px;
+
+        background-color:#fff;
+        box-shadow: 0 0 20px 0 #999 ;
+        border-radius: 3px;
+        top: 40%;
+        left: 40%;
+
+      position: absolute;
+        
+       
+    }
+    .field{
+        font-weight: bold;
+
+        margin-left: 5px;
+        padding:10px;
+    }
+span{
+    margin-left: 10px;
+
+}
+.inputfield{
+    width: 90%;
+    height: 22px;
+    padding-bottom:2px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color:transparent;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn{
+    margin-left:60px;
+    background-color: green;
+    color: #fff;
+    width:70%;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-weight: BOLD;
+}
+
+    </STYLe>
+</head>
+<body>
+    <INPUT type="file"> <span><button class="upload-btn">upload</button></span>
+   <FORm  action=index.js method="post"> 
+    <div class="container">
+        <DIV class="field">
+        <span>FIRST NAME</span>
+        <input type="text" class="inputfield" name="fn" placeholder="FIRST NAME">
+       </DIV>
+        <DIV class="field">
+            <SPAN>LAST NAME</SPAN>
+        
+        <INPUT type="text" class="inputfield"  name="LAST NAME" placeholder="LAST NAME">
+        </DIV>
+        <DIV class="field">
+            <SPAN>EMAIL</SPAN>
+            <INPUT type="email" class="inputfield"  name="EMAIL" placeholder="ABCD@GMAIL.COM">
+        </DIV>
+        <DIV class="field">
+            <SPAN>EMAIL</SPAN>
+            <INPUT type="password" class="inputfield"  name="PASSWORD" placeholder="PASSWORD">
+        </DIV>
+       <div>
+           <button class="btn" >SUBMIT</button>
+       </div>
+    </div>
+</FORm>
+</body>
+</html>

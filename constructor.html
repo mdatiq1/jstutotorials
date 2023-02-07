@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>constructor & prototype</h1>
+
+    <script>
+         function User(fn,ln){
+           this.fname=fn;       //here are making constructor
+            this.lname=ln;
+        }
+        var atiq1=new User("atiqur","rahman");  // making an object
+        var atiq12=new User("my bayby","zulekha");
+        console.log(atiq1);
+        console.log(atiq12);
+        User.prototype.age=10;  //this is protoype 
+        console.log(atiq1);
+
+    </script>
+</body>
+</html>

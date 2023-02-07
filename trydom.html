@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+
+    .container{
+        position: relative;
+        border: 2px solid red;
+        height: 90vh;
+        width: 90vw;
+    }
+    .conatiner1{
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+    }
+    .conatiner2{
+        z-index: 2;
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        border: 2px solid green;
+        height: 20vh;
+        width: 20vw;
+    }
+    .conatiner3{
+        z-index: 3;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        border: 2px solid red;
+        height: 20vh;
+        width: 20vw;
+    }
+.nav{
+    position: absolute;
+    border: 2px solid grey;
+    width: 100px;
+  transform: translateX();
+
+  transition:transform 0.3s ease-in;
+}
+
+
+.navgo{
+    border: 2px solid grey;
+    width: 100px;
+  transform: translateX(-120px);
+}
+
+ 
+.Hamburger{
+    margin-top: 50px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+    
+}
+.Hamburgergo{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+    
+}
+
+   </style>
+
+
+
+
+</head>
+<body>
+    <h1> hi this is md atiqurrahman</h1>
+    <div id="inner">
+        <h1 id="inner1">no i am not here</h1>
+    </div>
+    <div id="buttons">
+        <button id="button1" onclick=meranaam()>
+           Lorem ipsum dolor sit amet.
+    </button>
+
+
+    
+    </div>
+
+    <img class="Hamburger" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA4IUmJiakOuDpPFV_JHSfwqW6N-e-55Ze_HfpCt5MBQ&s" alt="">
+     <div class="nav  navgo">
+        <nav>
+           
+            <ul>
+               <li><a href="/home">Home</a></li>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+     </div>
+       
+     <div class="container">
+      <div class="conatiner1">
+
+      </div>
+   <div class="conatiner2">
+        
+      </div>
+      <div class="conatiner3">
+        
+    </div>
+
+     </div>
+
+
+
+
+    <script>
+        var h1hai = document.getElementById('inner1')
+        var game = h1hai.innerHTML='my name is this';
+        var game2 = h1hai.innerText = 'not it is not '
+        var game3 = document.getElementById('button1')
+        var meranaam =()=>{
+            var game3 = document.getElementById('button1').innerHTML ='this is ye'
+            console.log('hii this is clciked')
+        }
+        var game4 = document.getElementsByClassName('gameon')
+        console.log(game4)
+        
+            // console.log('alertr')
+            var game4 = document.getElementsByClassName('gameon')
+            if(game4 ==false){
+                console.log('false ho gya hai')
+            }
+            else{
+                console.log('dikh rha hhai')
+            }
+            
+              var nav = document.getElementsByClassName('nav');
+              var navgo = document.getElementsByClassName('navgo');
+            //   console.log(nav)
+            //   console.log(navgo)
+
+            if(nav===true)
+            {
+                console.log("navc")
+            }
+
+         document.querySelector('.Hamburger').addEventListener('click',()=>{      
+            // console.log('clicked');
+         document.querySelector('.nav').classList.toggle('navgo')
+
+
+         })            
+
+ 
+
+
+
+        // console.log(ga)
+    //  console.log(h1hai)
+    //  console.log(game2)
+    </script>
+</body>
+</html>

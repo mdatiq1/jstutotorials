@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+        
+</head>
+<body >
+    <h1>----events----</h1>
+    <h3>events is used to call functions etc</h3>
+    <script>
+    function a(){
+            alert("hii this is md atiqur rahman");
+        }
+        
+        </script>
+  <button onclick="a()">okk</button>
+  <h3>here  when we click on okk then will call a function 
+    is known as event <br>
+    Many types of events------ <br>
+     click(onclick)   ------------ keypress(onkeypress)--- onkeypress works only on form and body tag <br>
+     doubleclick(ondblclick)--------- keyup(onkeyup)  <br>
+     right click(oncontextmenu)-------- load(onload) <br>
+     mouse hover(onmouseenter)------- unload(onunload)  <br>
+     moise down(onmousedown)------ resize(onresize) --- work only on body tag  <br>
+     mouse out(onmouseout)-------- scroll(onscroll)  ---- works on div also<br>
+     mouse up(onmouseup)
+
+  </h3>
+  <p ondblclick="a()">double click check</p>
+  <p oncontextmenu="a()">right click check</p>
+  <p onmouseenter="a(">mouse hover test</p>
+  
+     <h1 style="margin-left: ;31%">forms events</h1>
+      
+      <form action="">
+        <div>
+        <label for="">name</label>
+        <input type="text" id="fname"  onfocus="focusF(this)" onblur="blurF(this)" oninput="inputF(this)"> <br> <br>
+    </div>
+    <div>
+        <label for="">class</label>
+        <input type="text"  onfocus="focusF(this)"  onblur="blurF(this)"> <br> <br>
+    </div>
+    <div>
+        <label for="" >country</label>
+       <select name="" id="" onfocus="focusF(this)"  onblur="blurF(this)">
+        <option value="">india</option>
+        <option value="">pakistan</option>
+        <option value="">indonesia</option>
+        <option value="">srilanka</option>
+        <option value="">bangladesh</option>
+       
+    
+    
+    </select>
+    <br>
+    </div>
+      </form>
+      <div id="test" style="border:1px solid red ;"></div>
+      <h3> actually focus function , we can use in input,
+        select and anchor tag also</h3>
+        <h3>if we want to change color of focus to normal 
+            after event then we use blur </h3>
+
+
+           <H2 style="margin-left:31% ;">INPUT EVENT</H2>
+            <h4>input event work only on text area not on select and radio button</h4>
+           <h4>in this tut. oninput is basically wrorking is that when we typing anything in targeted tag 
+             also writting in div area which is also merged with  anhd targeted by test id 
+           </h4>
+
+           <h2></h2>
+       
+       <script>
+        function focusF(atiq){
+         atiq.style.background="grey";  
+        }
+        function blurF(atiq){
+            atiq.style.background="";
+        }
+        function inputF(atiq){
+             var a = atiq.value;
+             document.getElementById("test").innerHTML=a;
+        }
+       </script>
+
+
+</body>
+</html>

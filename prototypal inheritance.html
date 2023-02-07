@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototypal inheritance</title>
+</head>
+<body>
+    <h1  style="margin-left:40%">prototypal inheritance</h1>
+
+    <script>
+var object1={
+    name : "md atiqur rahman ",
+    class: "btech",
+    gf: "zulekha"
+}
+   var object2 =  {
+    age: 22,
+    gfAge: 20
+   }
+   object2.__proto__= object1;
+   document.write(`object name is ${object2.name} and age is${object2.age}  and his gf is ${object2.gf} and her age is ${object2.gfAge}`);
+</script>
+
+<h1>
+   here when we print object2.name it will print atiqur rahman .but in object2
+   we defined name .actually it is inheriting method & properties  of object1
+   becasue we used here object2._proto__ = object1 . when we remove this line it will show undefined when we 
+   print value of object2.name.
+    </h1>
+   
+</body>
+</html>

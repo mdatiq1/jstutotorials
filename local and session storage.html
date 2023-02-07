@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>----localstorage and sessions---</h1>
+      <h3>javascript gives some storage to the user which is local and sessions storage 
+        .sessions storage-- <br> sessions storage clear after some times when we relaod and 
+        logout the page
+      </h3>
+      <script>
+
+
+let sabjiItem =["aaloo","pyaz","tamatar","baigan"];
+        // adding to local storage
+        localStorage.setItem("name", "md atiqur rahman");
+        localStorage.setItem("Bname","md shafikur rahman");
+        localStorage.setItem("sabji",JSON.stringify (  sabjiItem));// it will assume as an string. to convert their type we use  json.stringfy().
+
+        //  for fetch the item.
+        let name = localStorage.getItem("Bname");
+         let veg =JSON.parse(  (localStorage.getItem("sabji")));  // json.parse change the type.
+        document.write(veg);
+          
+      document.write ("<br>");
+    document.write(name);
+    // for clear the srorage 
+    //localStorage.clear();
+
+
+    localStorage.removeItem("name");  // to delete single element from the local storage
+      </script>
+</body>
+</html>
